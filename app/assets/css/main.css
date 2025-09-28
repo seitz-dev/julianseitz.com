@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --font-mosserat: "Montserrat", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #c4a1a1;
+  --color-accent: #3b82f6;
+  --color-background: #262626;
+  --color-background-secondary: #e5e5e5;
+}
+
+body {
+  @apply h-full w-full;
+  background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
+  background-blend-mode: luminosity;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; /* scale svg to fill screen, optional */
+}
+
+
+html {
+  @apply h-screen w-screen;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* iOS momentum */
+}
+
+#__nuxt {
+  @apply h-screen w-screen;
+}
+
+.hover {
+  @apply hover:scale-[101%] transition-all ease-in-out duration-300;
+}
+
+.transition-color {
+  @apply transition-colors ease-in-out duration-600 delay-50;
+}
+
+#about {
+  background: url("/assets/bg2.svg"), var(--color-neutral-900);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact {
+  background: url("/assets/bg3.svg"), var(--color-neutral-900);
+  background-blend-mode:luminosity;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
