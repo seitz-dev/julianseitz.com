@@ -25,7 +25,7 @@ body::before {
   background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -3;
 }
 
 body {
@@ -51,25 +51,28 @@ html {
   @apply transition-colors ease-in-out duration-600 delay-50;
 }
 
+#about, #contact {
+  position:relative;
+}
+
 #about::before {
   content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  position: absolute;
+  inset: 0;
   background: url("/assets/bg2.svg"), var(--color-neutral-900);
   background-blend-mode: soft-light;
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -3;
 }
 
 #contact::before {
   content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  position: absolute;
+  inset: 0;
   background: url("/assets/bg3.svg"), var(--color-neutral-900);
   background-blend-mode:luminosity;
-  background-attachment: fixed;
+  background-position:center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
