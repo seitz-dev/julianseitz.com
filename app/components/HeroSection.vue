@@ -82,7 +82,7 @@
 
       <NuxtLink
         class="p-4 hover hover:scale-110! hover:brightness-80 bg-background rounded-full flex items-center absolute right-0 bottom-0"
-        to="mailto:julian3seitz@gmail.com"
+        to="mailto:me@julianseitz.com"
         target="_blank"
       >
         <Icon

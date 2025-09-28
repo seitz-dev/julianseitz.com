@@ -16,7 +16,7 @@
       <div class="flex gap-4 font-black max-w-2xl flex-wrap justify-center">
         <div class="hover hover:scale-110!">
           <NuxtLink
-            to="mailto:julian.seitz@example.com"
+            to="mailto:me@julianseitz.com"
             class="px-6 py-3 bg-white text-gray-700 font-semibold rounded-md hover:bg-gray-200/80 transition-colors flex justify-center items-center gap-4"
           >
             <Icon name="material-symbols:mail" size="20" class="text-red-900" />
