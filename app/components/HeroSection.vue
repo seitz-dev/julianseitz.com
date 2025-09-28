@@ -1,6 +1,6 @@
 <template>
   <main
-    class="site-wrapper flex flex-col gap-8 min-h-[100dvh] pt-32 select-none"
+    class="flex flex-col gap-8 min-h-[100dvh] pt-32 select-none"
   >
     <div
       class="flex justify-center items-center p-8 rounded-sm flex-col gap-8 h-full grow"
@@ -98,14 +98,17 @@
 <script lang="ts" setup>
 const hasScrolled = ref(false);
 
-// if  window scroll y > 100, set hasScrolled to true
 onMounted(() => {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      hasScrolled.value = true;
-    } else {
-      hasScrolled.value = false;
-    }
-  });
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (window.scrollY > 50) {
+        hasScrolled.value = true;
+      } else {
+        hasScrolled.value = false;
+      }
+    },
+    { passive: true }
+  );
 });
 </script>
