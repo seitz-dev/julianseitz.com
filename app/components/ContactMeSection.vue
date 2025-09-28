@@ -13,8 +13,45 @@
         opportunities and connections.
       </p>
 
+      <div class="flex gap-4 font-black max-w-2xl flex-wrap justify-center">
+        <div class="hover hover:scale-110!">
+          <NuxtLink
+            to="mailto:julian.seitz@example.com"
+            class="px-6 py-3 bg-white text-gray-700 font-semibold rounded-md hover:bg-gray-200/80 transition-colors flex justify-center items-center gap-4"
+          >
+            <Icon name="material-symbols:mail" size="20" class="text-red-900" />
+            Email
+          </NuxtLink>
+        </div>
 
-      <div class="px-6 bg-transparent py-3 flex rounded-md max-w-fit items-center justify-center gap-4">
+        <div class="hover hover:scale-110!">
+          <NuxtLink
+            to="https://www.linkedin.com/in/julianseitz/"
+            target="_blank"
+            class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors flex justify-center items-center gap-4"
+          >
+            <Icon name="custom:linkedin" size="20" class="text-white" />
+            LinkedIn
+          </NuxtLink>
+        </div>
+
+        <div class="hover hover:scale-110!">
+          <NuxtLink
+            to="https://github.com/julianseitz"
+            target="_blank"
+            class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-md hover:bg-gray-700 transition-colors flex justify-center items-center gap-4"
+          >
+            <Icon name="custom:github" size="20" class="text-white" />
+            GitHub
+          </NuxtLink>
+        </div>
+      </div>
+
+    </div>
+
+    <NuxtImg loading="lazy" class="hover hover:scale-110! drop-shadow-lg" width="512" height="512" src="/av.png" />
+
+    <div class="px-6 bg-transparent py-3 flex rounded-md max-w-fit items-center justify-center gap-4">
         <!-- Discord card: gradient, glow, copy-to-clipboard -->
         <div class="relative">
           <div
@@ -56,42 +93,6 @@
           </transition>
         </div>
       </div>
-
-      <div class="flex gap-4 font-black max-w-2xl flex-wrap justify-center">
-        <div class="hover hover:scale-110!">
-          <NuxtLink
-            to="mailto:julian.seitz@example.com"
-            class="px-6 py-3 bg-white text-gray-700 font-semibold rounded-md hover:bg-gray-200/80 transition-colors flex justify-center items-center gap-4"
-          >
-            <Icon name="material-symbols:mail" size="20" class="text-red-900" />
-            Email
-          </NuxtLink>
-        </div>
-
-        <div class="hover hover:scale-110!">
-          <NuxtLink
-            to="https://www.linkedin.com/in/julianseitz/"
-            target="_blank"
-            class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors flex justify-center items-center gap-4"
-          >
-            <Icon name="custom:linkedin" size="20" class="text-white" />
-            LinkedIn
-          </NuxtLink>
-        </div>
-
-        <div class="hover hover:scale-110!">
-          <NuxtLink
-            to="https://github.com/julianseitz"
-            target="_blank"
-            class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-md hover:bg-gray-700 transition-colors flex justify-center items-center gap-4"
-          >
-            <Icon name="custom:github" size="20" class="text-white" />
-            GitHub
-          </NuxtLink>
-        </div>
-      </div>
-
-    </div>
 
     <p
       class="text-sm tracking-tight text-gray-400 h-full select-none hover flex items-end p-4"
