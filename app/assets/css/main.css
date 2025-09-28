@@ -20,7 +20,10 @@
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
   background-blend-mode: luminosity;
   background-size: cover;
@@ -29,18 +32,21 @@ body::before {
 }
 
 body {
+  background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-repeat: no-repeat;
   @apply h-full w-full;
 }
 
-
 html {
-  @apply h-screen w-screen;
+  @apply h-[100dvh] w-[100dvw];
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; /* iOS momentum */
 }
 
 #__nuxt {
-  @apply h-screen w-screen;
+  @apply h-[100dvh] w-[100dvw];
 }
 
 .hover {
@@ -51,8 +57,9 @@ html {
   @apply transition-colors ease-in-out duration-600 delay-50;
 }
 
-#about, #contact {
-  position:relative;
+#about,
+#contact {
+  position: relative;
 }
 
 #about::before {
@@ -71,8 +78,8 @@ html {
   position: absolute;
   inset: 0;
   background: url("/assets/bg3.svg"), var(--color-neutral-900);
-  background-blend-mode:luminosity;
-  background-position:center;
+  background-blend-mode: luminosity;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
