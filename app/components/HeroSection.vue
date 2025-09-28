@@ -99,16 +99,21 @@
 const hasScrolled = ref(false);
 
 onMounted(() => {
+  let ticking = false;
+
   window.addEventListener(
     "scroll",
     () => {
-      if (window.scrollY > 50) {
-        hasScrolled.value = true;
-      } else {
-        hasScrolled.value = false;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          hasScrolled.value = window.scrollY > 50;
+          ticking = false;
+        });
+        ticking = true;
       }
     },
     { passive: true }
   );
 });
+
 </script>
