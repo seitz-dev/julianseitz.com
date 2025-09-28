@@ -28,7 +28,12 @@ body::before {
   background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -3;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 2;
 }
 
 body {
@@ -62,6 +67,12 @@ html {
   position: relative;
 }
 
+#about > *,
+#contact > * {
+  position: relative;
+  z-index: 1;
+}
+
 #about::before {
   content: "";
   position: absolute;
@@ -70,8 +81,9 @@ html {
   background-blend-mode: soft-light;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -3;
+  z-index: 0;
 }
+
 
 #contact::before {
   content: "";
@@ -82,5 +94,5 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 0;
 }
