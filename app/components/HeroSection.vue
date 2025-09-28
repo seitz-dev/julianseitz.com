@@ -1,7 +1,5 @@
 <template>
-  <main
-    class="flex flex-col gap-8 min-h-[100svh] pt-32 select-none"
-  >
+  <main class="flex flex-col gap-8 min-h-[100svh] pt-32 select-none">
     <div
       class="flex justify-center items-center p-8 rounded-sm flex-col gap-8 h-full grow"
     >
@@ -63,22 +61,24 @@
         </NuxtLink>
       </div>
 
-      <div
-        class="scroll-indicator absolute left-1/2 bottom-0 transform -translate-x-1/2 flex justify-center items-center w-auto transition-opacity duration-500 z-10"
-        :class="{ 'opacity-0': hasScrolled }"
-      >
-        <a href="#about" class="no-underline">
-          <div
-            class="animate-bounce duration-500 p-4 bg-neutral-800 rounded-full flex hover hover:scale-110!"
-          >
-            <Icon
-              name="material-symbols:arrow-downward"
-              size="32"
-              class="text-gray-400"
-            />
-          </div>
-        </a>
-      </div>
+      <ClientOnly>
+        <div
+          class="scroll-indicator absolute left-1/2 bottom-0 transform -translate-x-1/2 flex justify-center items-center w-auto transition-opacity duration-500 z-10"
+          :class="{ 'opacity-0': hasScrolled }"
+        >
+          <a href="#about" class="no-underline">
+            <div
+              class="animate-bounce duration-500 p-4 bg-neutral-800 rounded-full flex hover hover:scale-110!"
+            >
+              <Icon
+                name="material-symbols:arrow-downward"
+                size="32"
+                class="text-gray-400"
+              />
+            </div>
+          </a>
+        </div>
+      </ClientOnly>
 
       <NuxtLink
         class="p-4 hover hover:scale-110! hover:brightness-80 bg-background rounded-full flex items-center absolute right-0 bottom-0"
@@ -115,5 +115,4 @@ onMounted(() => {
     { passive: true }
   );
 });
-
 </script>
