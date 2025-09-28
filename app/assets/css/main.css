@@ -42,13 +42,13 @@ body {
 }
 
 html {
-  @apply h-[100dvh] w-[100dvw];
+  @apply h-[100vh] w-[100vw];
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; /* iOS momentum */
 }
 
 #__nuxt {
-  @apply h-[100dvh] w-[100dvw];
+  @apply h-[100vh] w-[100vw];
 }
 
 .hover {
