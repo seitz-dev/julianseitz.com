@@ -17,13 +17,19 @@
   --color-background-secondary: #e5e5e5;
 }
 
-body {
-  @apply h-full w-full;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
   background-blend-mode: luminosity;
-  background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: cover; /* scale svg to fill screen, optional */
+  z-index: -1;
+}
+
+body {
+  @apply h-full w-full;
 }
 
 
