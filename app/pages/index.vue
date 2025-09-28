@@ -1,7 +1,4 @@
 <template>
-  <Head>
-    <title>Julian Seitz - Software Developer</title>
-  </Head>
   <div>
     <NavigationBar />
 
@@ -10,3 +7,16 @@
     <ContactMeSection />
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "Julian Seitz - Software Developer & Student",
+  meta: [
+    {
+      name: "description",
+      content:
+        "I'm Julian Seitz, a passionate software developer and student. Welcome to my personal website where I share my projects, skills, and experiences.",
+    },
+  ]
+});
+</script>

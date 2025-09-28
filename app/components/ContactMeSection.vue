@@ -49,7 +49,7 @@
 
     </div>
 
-    <NuxtImg loading="lazy" class="hover hover:scale-110! drop-shadow-lg" width="512" height="512" src="/av.png" />
+    <NuxtImg loading="lazy" alt="Discord Avatar" class="hover hover:scale-110! drop-shadow-lg" width="512" height="512" src="/av.png" />
 
     <div class="px-6 bg-transparent py-3 flex rounded-md max-w-fit items-center justify-center gap-4">
         <!-- Discord card: gradient, glow, copy-to-clipboard -->

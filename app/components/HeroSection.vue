@@ -29,7 +29,9 @@
               <NuxtImg
                 src="/goc.svg"
                 alt="Government of Canada Logo"
-                class="mx-auto"
+                class="mx-auto w-80 h-20 object-contain"
+                fetchpriority="high"
+                cache="immutable"
                 width="400"
                 height="100"
               />
@@ -42,7 +44,7 @@
         </div>
       </div>
     </div>
-  <div class="flex m-4 gap-4 items-center justify-between relative">
+    <div class="flex m-4 gap-4 items-center justify-between relative">
       <div class="flex gap-4">
         <NuxtLink
           to="https://github.com/renderbr"
@@ -65,13 +67,17 @@
         class="scroll-indicator absolute left-1/2 bottom-0 transform -translate-x-1/2 flex justify-center items-center w-auto transition-opacity duration-500 z-10"
         :class="{ 'opacity-0': hasScrolled }"
       >
-        <div class="animate-bounce duration-500 p-4 bg-neutral-800 rounded-full flex hover hover:scale-110!">
-          <Icon
-            name="material-symbols:arrow-downward"
-            size="32"
-            class="text-gray-400"
-          />
-        </div>
+        <a href="#about" class="no-underline">
+          <div
+            class="animate-bounce duration-500 p-4 bg-neutral-800 rounded-full flex hover hover:scale-110!"
+          >
+            <Icon
+              name="material-symbols:arrow-downward"
+              size="32"
+              class="text-gray-400"
+            />
+          </div>
+        </a>
       </div>
 
       <NuxtLink
