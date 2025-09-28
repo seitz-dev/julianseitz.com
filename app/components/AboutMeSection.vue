@@ -1,7 +1,7 @@
 <template>
   <div
     id="about"
-    class="h-[calc(100dvh-50rem)] min-h-fit flex flex-col pb-24 select-none gap-12"
+    class="h-[calc(100vh-50rem)] min-h-fit flex flex-col pb-24 select-none gap-12"
   >
     <div class="flex justify-center mt-32 flex-col items-center gap-8">
       <SectionTitle>Who am I?</SectionTitle>

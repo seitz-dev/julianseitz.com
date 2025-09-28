@@ -1,7 +1,7 @@
 <template>
   <div
     id="contact"
-    class="h-[calc(100dvh-75rem)] min-h-fit flex flex-col select-none gap-12 items-center justify-between"
+    class="h-[calc(100vh-75rem)] min-h-fit flex flex-col select-none gap-12 items-center justify-between"
   >
     <div class="flex flex-col mt-32 w-full justify-center items-center gap-4">
       <SectionTitle>Let's connect.</SectionTitle>

@@ -1,6 +1,6 @@
 <template>
   <main
-    class="flex flex-col gap-8 min-h-[100dvh] pt-32 select-none"
+    class="flex flex-col gap-8 min-h-screen pt-32 select-none"
   >
     <div
       class="flex justify-center items-center p-8 rounded-sm flex-col gap-8 h-full grow"
