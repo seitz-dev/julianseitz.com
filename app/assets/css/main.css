@@ -34,6 +34,7 @@ body > * {
 }
 
 body {
+  background-color: #171717;
   background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
   background-blend-mode: luminosity;
   background-size: cover;
