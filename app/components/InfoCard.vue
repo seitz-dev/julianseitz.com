@@ -3,7 +3,7 @@
     class="bg-background/10 p-8 flex flex-col border-background/80 border-[0.2px] rounded-lg shadow-lg hover hover:scale-105! transition-transform"
   >
     <div class="flex gap-8">
-      <div class="bg-blue-500/20 p-2 flex rounded-xl max-h-fit">
+      <div class="bg-blue-500/20 p-2 flex rounded-xl h-fit max-h-fit">
         <slot name="icon"></slot>
       </div>
 
