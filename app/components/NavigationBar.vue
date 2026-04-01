@@ -1,28 +1,37 @@
 <template>
-  <header class="relative inset-x-0 top-8 z-50 px-4 flex justify-center">
-    <div
-      class="absolute w-full min-w-fit sm:max-w-[25vw] max-w-[50vw] mx-auto p-6 md:p-8 shadow-lg rounded-full bg-background/20 backdrop-blur-xs hover flex flex-col md:flex-row items-center justify-center sm:justify-between gap-4"
-    >
-      <div class="hover hover:scale-110! sm:block hidden">
-        <p
-          class="text-3xl font-black hover:text-accent drop-shadow select-none transition-color text-blue-300"
+  <header class="fixed inset-x-0 top-5 z-50 px-4 sm:px-6 flex justify-center pointer-events-none">
+    <div class="pointer-events-auto w-full max-w-3xl">
+      <div
+        class="mx-auto flex items-center justify-between gap-4 rounded-full border border-white/15 bg-neutral-900/45 px-5 py-3 sm:px-7 shadow-[0_10px_35px_rgba(0,0,0,0.35)] backdrop-blur-md">
+        <a
+          href="#"
+          class="hidden sm:inline-block text-xl font-extrabold tracking-wide text-blue-200/90 transition-colors duration-300 hover:text-white"
         >
           Julian Seitz
-        </p>
+        </a>
+
+        <nav aria-label="Primary navigation" class="ml-auto">
+          <ul class="flex items-center gap-2 sm:gap-3 text-sm sm:text-base font-semibold text-blue-100/90">
+            <li>
+              <a href="#about" class="nav-link">Bio</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav>
-        <ul class="flex flex-row sm:gap-12 gap-8 text-xl text-blue-200">
-          <li class="hover hover:scale-120!">
-            <a href="#about">Bio</a>
-          </li>
-        
-
-          <li class="hover hover:scale-120!">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </header>
 </template>
+
+<style scoped>
+.nav-link {
+  @apply inline-flex items-center rounded-full px-4 py-2 transition-all duration-300;
+}
+
+.nav-link:hover {
+  @apply bg-white/12 text-white;
+  transform: translateY(-1px);
+}
+</style>

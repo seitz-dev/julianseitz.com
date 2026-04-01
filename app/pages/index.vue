@@ -10,12 +10,12 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Julian Seitz - Software Developer & Student",
+  title: "Julian Seitz - Who am I?",
   meta: [
     {
       name: "description",
       content:
-        "I'm Julian Seitz, a passionate software developer and student. Welcome to my personal website where I share my projects, skills, and experiences.",
+        "I'm Julian Seitz, a passionate software developer. Welcome to my personal website where I share my projects, skills, and experiences.",
     },
     {
       name: "theme-color",
