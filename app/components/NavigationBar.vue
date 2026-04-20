@@ -5,7 +5,7 @@
         <div
           class="mx-auto flex items-center justify-between gap-5 rounded-full border border-white/15 bg-neutral-900/45 px-6 py-3.5 sm:px-8 shadow-[0_10px_35px_rgba(0,0,0,0.35)] backdrop-blur-md">
           <a href="#"
-            class="hidden sm:inline-block text-2xl font-extrabold tracking-wide text-blue-200/90 transition-colors duration-300 hover:text-white">
+            class="sm:inline-block text-lg sm:text-2xl font-extrabold tracking-wide text-blue-200/90 transition-colors duration-300 hover:text-white">
             Julian Seitz
           </a>
 

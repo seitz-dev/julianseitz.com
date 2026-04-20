@@ -12,7 +12,7 @@
 
           <div class="hover mt-2">
             <p
-              class="text-2xl tracking-tighter transition-color text-slate-300 hover:text-red-400 font-semibold text-center">
+              class="text-lg sm:text-2xl tracking-tighter transition-color text-slate-300 hover:text-red-400 font-semibold text-center">
               Developer @ National Defence of Canada
             </p>
             <div class="flex gap-4 justify-center items-center mt-4">
