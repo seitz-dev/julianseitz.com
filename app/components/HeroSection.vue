@@ -17,7 +17,7 @@
             </p>
             <div class="flex gap-4 justify-center items-center mt-4">
               <Tag class="text-red-300">Software Developer</Tag>
-              <Tag class="text-green-300">Soon-to-be Graduate</Tag>
+              <Tag class="text-green-300">CPA Graduate</Tag>
             </div>
             <div class="hover mt-4">
               <NuxtLink to="https://www.canada.ca/en/department-national-defence.html" target="_blank">
