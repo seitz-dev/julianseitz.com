@@ -21,8 +21,6 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
-  background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
@@ -38,11 +36,11 @@ html, body {
 }
 
 body {
-  background: url("/assets/bg.svg"), linear-gradient(135deg, #684c5d, #345b83);
   background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
   @apply h-full w-full;
+  font-family: var(--font-mosserat);
 }
 
 html {
@@ -74,26 +72,59 @@ html {
   z-index: 1;
 }
 
-#about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/assets/bg2.svg"), var(--color-neutral-900);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
+.liquid-glass {
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.009),
+      rgba(255, 255, 255, 0.015)
+    ) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(147, 197, 253, 0.32),
+      rgba(196, 181, 253, 0.12) 35%,
+      rgba(255, 255, 255, 0.06) 60%,
+      rgba(103, 232, 249, 0.22)
+    ) border-box;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.025);
 }
 
-
-#contact::before {
+.liquid-glass::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: url("/assets/bg3.svg"), var(--color-neutral-900);
-  background-blend-mode: luminosity;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
+  inset: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse 70% 45% at 50% 0%,
+    rgba(255, 255, 255, 0.08),
+    transparent 70%
+  );
+}
+
+.liquid-glass::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(191, 219, 254, 0.55),
+    rgba(216, 180, 254, 0.4),
+    transparent
+  );
+
+  filter: blur(0.25px);
 }
