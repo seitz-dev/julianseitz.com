@@ -5,18 +5,18 @@
       <div class="flex justify-center mt-32 flex-col items-center gap-8">
         <SectionTitle>Who am I?</SectionTitle>
 
-        <p class="text-xl tracking-tighter text-gray-400 font-semibold max-w-4xl text-center hover px-4 sm:px-0">
+        <p class="text-xl tracking-tighter text-neutral-400 font-normal max-w-4xl text-center hover px-4 sm:px-0">
           Hi, I'm Julian, a software developer, who's been programming since eight years old.
           It's one of my all-time favorite hobbies, and something I'm super passionate about.
         </p>
 
-        <p class="text-xl tracking-tighter text-gray-400 font-semibold max-w-2xl text-center hover px-4 sm:px-0">
+        <p class="text-xl tracking-tighter text-neutral-400 font-normal max-w-2xl text-center hover px-4 sm:px-0">
           Since forever, I've been fascinated by technology and naturally
           gravitated towards <span class="text-blue-300">computers</span> and <span
             class="text-blue-300">programming</span>.
         </p>
 
-        <p class="text-xl tracking-tighter text-gray-400 font-semibold max-w-3xl text-center hover px-4 sm:px-0">
+        <p class="text-xl tracking-tighter text-neutral-400 font-normal max-w-3xl text-center hover px-4 sm:px-0">
           The reason I love software development is the logical, creative problem solving side.
           I also like designing architecture and trying out new technologies. I don't there's ever a moment where I'm
           not
@@ -41,8 +41,8 @@
             <template #icon>
               <Icon class="text-blue-400" name="mdi:school" size="32" />
             </template>
-            <template #title>Computer Programming & Analysis</template>
-            Studied at St. Lawrence College from 2023 - 2026, Dean's List from 2024 - 2025. Held a 3.8 Cumulative GPA.
+            <template #title>Computer Programming Graduate</template>
+            Studied at St. Lawrence College from 2023 - 2026 in the Computer Programming & Analysis course.
           </InfoCard>
 
           <InfoCard>
@@ -65,6 +65,11 @@
             video games, reading & writing, chemistry, walking, modding, and hacking.
           </InfoCard>
         </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <p class="text-xl tracking-tighter text-neutral-400 font-normal max-w-3xl text-center hover px-4 sm:px-0">
+          I have been working for Canada's Department of National Defence since May, 2025. For those interested in contracting me for a project, I will likely turn it down.
+        </p>
       </div>
     </div>
   </div>

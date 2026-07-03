@@ -27,7 +27,7 @@
     <div id="contact" class="min-h-fit flex flex-col select-none gap-12 items-center justify-between">
       <div class="flex flex-col mt-32 w-full justify-center items-center gap-4">
         <SectionTitle>Let's connect.</SectionTitle>
-        <p class="text-xl tracking-tighter text-gray-400 font-semibold max-w-2xl text-center hover px-4 sm:px-0">
+        <p class="text-xl tracking-tighter text-gray-400 font-normal max-w-2xl text-center hover px-4 mb-4 sm:px-0">
           If you have a question, want to collaborate, or just
           want to say hi, feel free to reach out. I'm always open to new
           opportunities or conversations.

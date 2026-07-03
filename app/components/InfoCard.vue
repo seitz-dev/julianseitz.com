@@ -8,7 +8,7 @@
       </div>
 
       <div>
-        <h3 class="text-xl font-bold mb-4 text-blue-100">
+        <h3 class="text-xl font-bold mb-2 text-blue-100">
           <slot name="title">Title</slot>
         </h3>
 

@@ -12,7 +12,7 @@
 
           <div class="hover mt-2">
             <p
-              class="text-lg sm:text-2xl tracking-tighter transition-color text-slate-300 hover:text-slate-400 font-semibold text-center">
+              class="text-lg sm:text-2xl tracking-tighter transition-color text-slate-300 hover:text-slate-400 font-normal text-center">
               Software Developer, Computer Enthusiast
             </p>
           </div>
