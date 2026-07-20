@@ -82,7 +82,6 @@
 <script lang="ts" setup>
 import { tsParticles } from "@tsparticles/engine";
 import { loadSlim } from '@tsparticles/slim';
-import { ClientOnly } from '../../.nuxt/components';
 
 (async () => {
   await loadSlim(tsParticles);
