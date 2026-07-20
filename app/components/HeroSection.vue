@@ -1,6 +1,9 @@
 <template>
   <main class="flex flex-col gap-8 min-h-svh pt-32 select-none relative isolate overflow-hidden bg-neutral-900">
-    <div id="main-section" class="hero-bg-filter absolute inset-0 pointer-events-none" aria-hidden="true" />
+    <ClientOnly>
+      <div id="main-section" class="hero-bg-filter absolute inset-0 pointer-events-none" aria-hidden="true" />
+    </ClientOnly>
+    
     <div class="flex justify-center items-center p-8 rounded-sm flex-col gap-8 h-full grow relative z-10">
       <div class="liquid-glass flex flex-col gap-4 p-20 rounded-[3rem] items-center relative backdrop-blur-[0.5px]">
         <div class="flex flex-col gap-2">

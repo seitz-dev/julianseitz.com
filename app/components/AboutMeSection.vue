@@ -1,6 +1,8 @@
 <template>
   <div class="relative isolate">
-    <div id="about-overlay" class="absolute inset-0 pointer-events-none" aria-hidden="true" />
+    <ClientOnly>
+      <div id="about-overlay" class="absolute inset-0 pointer-events-none" aria-hidden="true" />
+    </ClientOnly>
     <div id="about" class="min-h-fit flex flex-col pb-24 select-none gap-12 relative z-10">
       <div class="flex justify-center mt-32 flex-col items-center gap-8">
         <SectionTitle>Who am I?</SectionTitle>
@@ -68,7 +70,9 @@
       </div>
       <div class="flex items-center justify-center">
         <p class="text-xl tracking-tighter text-neutral-400 font-normal max-w-3xl text-center hover px-4 sm:px-0">
-          I have been working for Canada's Department of National Defence since May, 2025. For those interested in contracting me for a project, I will likely turn it down.
+          I have been working for Canada's Department of National Defence since May, 2025. For those interested in
+          contracting
+          me for a project, I will likely turn it down.
         </p>
       </div>
     </div>
@@ -78,6 +82,7 @@
 <script lang="ts" setup>
 import { tsParticles } from "@tsparticles/engine";
 import { loadSlim } from '@tsparticles/slim';
+import { ClientOnly } from '../../.nuxt/components';
 
 (async () => {
   await loadSlim(tsParticles);
